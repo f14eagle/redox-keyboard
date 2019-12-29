@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name redox-receiver-rescue)(type Legacy)(uri F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/pcb/redox_w_receiver_kicad_files/redox-receiver-cache.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/kicad/library/Type-C.pretty-master/Type-C.lib)(options "")(descr ""))
+  (lib (name ai03-locallib)(type Legacy)(uri "F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/kicad/library/Mixed Lib/schema/ai03-locallib.lib")(options "")(descr ""))
+  (lib (name logic)(type Legacy)(uri "F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/kicad/library/Mixed Lib/schema/logic.lib")(options "")(descr ""))
+  (lib (name Promicro)(type Legacy)(uri "F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/kicad/library/Mixed Lib/schema/Promicro.lib")(options "")(descr ""))
+  (lib (name redox_rev1-rescue)(type Legacy)(uri F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/pcb/redox_w_transmitters_kicad_files/redox_rev1-rescue.lib)(options "")(descr ""))
+)
