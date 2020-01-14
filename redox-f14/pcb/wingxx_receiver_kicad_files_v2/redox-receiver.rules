@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 4753)
+    (start_pass_no 4986)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -71,10 +71,10 @@
     "Net-(uC1-Pad3)" "Net-(uC1-Pad2)" "Net-(uC1-Pad36)" "Net-(uC1-Pad35)" "Net-(uC1-Pad34)" "Net-(uC1-Pad33)" "Net-(uC1-Pad30)" "Net-(uC1-Pad29)"
     "Net-(uC1-Pad28)" "Net-(uC1-Pad27)" "Net-(uC1-Pad26)" "Net-(uC1-Pad25)" "Net-(uC1-Pad24)" "Net-(uC1-Pad23)" "Net-(uC1-Pad22)" "Net-(uC1-Pad21)"
     "Net-(uC1-Pad20)" "Net-(uC1-Pad19)" "Net-(uC1-Pad18)" "Net-(uC1-Pad17)" "Net-(uC1-Pad16)" "Net-(uC1-Pad15)" "Net-(uC1-Pad14)" "Net-(U1-Pad19)"
-    "Net-(USB1-Pad3)" "Net-(USB1-Pad9)" +5V "Net-(D6-Pad4)" "Net-(D6-Pad3)" "Net-(D6-Pad2)" +3.3V "Net-(R5-Pad2)"
-    "Net-(U1-Pad42)" "Net-(U1-Pad41)" "Net-(U1-Pad40)" "Net-(U1-Pad39)" "Net-(U1-Pad38)" "Net-(R6-Pad2)" "Net-(U1-Pad32)" "Net-(U1-Pad30)"
-    "Net-(U1-Pad26)" "Net-(U1-Pad22)" "Net-(U1-Pad18)" "Net-(C2-Pad1)" "Net-(C1-Pad1)" "Net-(U1-Pad12)" "Net-(U1-Pad8)" "Net-(C3-Pad1)"
-    D+ "D-" "Net-(R2-Pad2)" "Net-(R1-Pad2)"
+    "Net-(USB1-Pad3)" "Net-(USB1-Pad9)" +5V "Net-(D6-Pad3)" "Net-(D6-Pad2)" +3.3V "Net-(R5-Pad2)" "Net-(U1-Pad42)"
+    "Net-(U1-Pad41)" "Net-(U1-Pad40)" "Net-(U1-Pad39)" "Net-(U1-Pad38)" "Net-(R6-Pad2)" "Net-(U1-Pad32)" "Net-(U1-Pad30)" "Net-(U1-Pad26)"
+    "Net-(U1-Pad22)" "Net-(U1-Pad18)" "Net-(C2-Pad1)" "Net-(C1-Pad1)" "Net-(U1-Pad12)" "Net-(U1-Pad8)" "Net-(C3-Pad1)" D+
+    "D-" "Net-(R2-Pad2)" "Net-(R1-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
