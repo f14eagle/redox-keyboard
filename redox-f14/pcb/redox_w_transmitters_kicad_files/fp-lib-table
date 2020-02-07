@@ -1,4 +1,5 @@
 (fp_lib_table
-  (lib (name pcb)(type KiCad)(uri F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/pcb)(options "")(descr ""))
+  (lib (name pcb)(type KiCad)(uri C:/gitrepo/redox-keyboard/redox-f14/pcb)(options "")(descr ""))
   (lib (name rescue-backup)(type KiCad)(uri ${KIPRJMOD}/rescue-backup)(options "")(descr ""))
+  (lib (name pcb_newsplit)(type KiCad)(uri C:/gitrepo/newsplit/pcb)(options "")(descr ""))
 )

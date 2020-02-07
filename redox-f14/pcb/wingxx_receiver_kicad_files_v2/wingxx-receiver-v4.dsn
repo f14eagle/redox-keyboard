@@ -1,4 +1,4 @@
-(pcb "F:\msys64\home\f14eagle\gitrepo\redox-keyboard-f14\redox-f14\pcb\wingxx_receiver_kicad_files_v2\wingxx-receiver-v4.dsn"
+(pcb "C:\gitrepo\redox-keyboard\redox-f14\pcb\wingxx_receiver_kicad_files_v2\wingxx-receiver-v4.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -25,14 +25,10 @@
             136398 -134620  127254 -134620  127254 -148590  78740 -148590
             74930 -144780  74930 -62230  78740 -58420  149860 -58420  153670 -62230)
     )
-    (keepout "" (polygon F.Cu 0  118110 -130810  137160 -130810  137160 -144780  118110 -144780
-            118110 -130810))
-    (keepout "" (polygon B.Cu 0  118110 -130810  137160 -130810  137160 -144780  118110 -144780
-            118110 -130810))
-    (keepout "" (polygon F.Cu 0  104902 -94234  112522 -94234  112522 -101346  104902 -101346
-            104902 -94234))
-    (keepout "" (polygon B.Cu 0  104902 -94234  112522 -94234  112522 -101346  104902 -101346
-            104902 -94234))
+    (keepout "" (polygon F.Cu 0  105410 -93980  111760 -93980  111760 -101600  105410 -101600
+            105410 -93980))
+    (keepout "" (polygon B.Cu 0  105410 -93980  111760 -93980  111760 -101600  105410 -101600
+            105410 -93980))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -42,30 +38,30 @@
     )
   )
   (placement
+    (component pcb:D3_SMD_Front
+      (place D1 85852 -77470 back 180 (PN D))
+      (place D2 104648 -77470 back 180 (PN D))
+      (place D3 123952 -77470 back 180 (PN D))
+      (place D4 143002 -77470 back 180 (PN D))
+      (place D11 85852 -79756 back 180 (PN D))
+      (place D12 104648 -79756 back 180 (PN D))
+      (place D13 123952 -79756 back 180 (PN D))
+      (place D14 143002 -79756 back 180 (PN D))
+      (place D21 85598 -115570 back 180 (PN D))
+      (place D22 104902 -115570 back 180 (PN D))
+      (place D23 123698 -115570 back 180 (PN D))
+      (place D24 143002 -115570 back 180 (PN D))
+      (place D31 85598 -117856 back 180 (PN D))
+      (place D32 104902 -117856 back 180 (PN D))
+      (place D33 123698 -117856 back 180 (PN D))
+      (place D34 143002 -117856 back 180 (PN D))
+    )
     (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
       (place PROGR_HEADER2 90170 -135636 front 90 (PN Conn_01x04_Female))
       (place PROGR_HEADER1 80518 -141224 front 180 (PN Conn_01x04_Female))
     )
     (component "wingxx-receiver:E73-nrf51822-Module"
       (place nrf1 105410 -139700 back 270 (PN "E73-nrf51822"))
-    )
-    (component pcb:D3_SMD_Back
-      (place D1 85852 -77470 front 0 (PN D))
-      (place D2 104648 -77470 front 0 (PN D))
-      (place D3 123952 -77470 front 0 (PN D))
-      (place D4 143002 -77470 front 0 (PN D))
-      (place D11 85852 -79756 front 0 (PN D))
-      (place D12 104648 -79756 front 0 (PN D))
-      (place D13 123952 -79756 front 0 (PN D))
-      (place D14 143002 -79756 front 0 (PN D))
-      (place D21 85598 -115570 front 0 (PN D))
-      (place D22 104902 -115570 front 0 (PN D))
-      (place D23 123698 -115570 front 0 (PN D))
-      (place D24 143002 -115570 front 0 (PN D))
-      (place D31 85598 -117856 front 0 (PN D))
-      (place D32 104902 -117856 front 0 (PN D))
-      (place D33 123698 -117856 front 0 (PN D))
-      (place D34 143002 -117856 front 0 (PN D))
     )
     (component Button_Switch_SMD:SW_SPST_CK_RS282G05A3
       (place RESET1 95250 -78740 back 180 (PN SW_SPST))
@@ -131,6 +127,18 @@
     )
   )
   (library
+    (image pcb:D3_SMD_Front
+      (outline (path signal 150  -2700 -750  2700 -750))
+      (outline (path signal 150  2700 750  -2700 750))
+      (outline (path signal 150  -2700 750  -2700 -750))
+      (outline (path signal 150  2700 750  2700 -750))
+      (outline (path signal 150  500 500  500 -500))
+      (outline (path signal 150  500 -500  -400 0))
+      (outline (path signal 150  -400 0  500 500))
+      (outline (path signal 150  -500 500  -500 -500))
+      (pin Rect[T]Pad_1300x950_um 2 1775 0)
+      (pin Rect[T]Pad_1300x950_um 1 -1775 0)
+    )
     (image Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
       (outline (path signal 50  1800 1800  -1800 1800))
       (outline (path signal 50  1800 -9400  1800 1800))
@@ -194,18 +202,6 @@
       (pin Rect[T]Pad_1198.88x698.5_um (rotate 90) 14 -3810 0)
       (pin Rect[T]Pad_698.5x1198.88_um (rotate 90) 1 -6858 15748)
       (pin Rect[T]Pad_698.5x1198.88_um (rotate 90) 11 -6858 3048)
-    )
-    (image pcb:D3_SMD_Back
-      (outline (path signal 150  2700 -750  2700 750))
-      (outline (path signal 150  -2700 -750  2700 -750))
-      (outline (path signal 150  -2700 750  -2700 -750))
-      (outline (path signal 150  2700 750  -2700 750))
-      (outline (path signal 150  500 -500  -400 0))
-      (outline (path signal 150  500 500  500 -500))
-      (outline (path signal 150  -400 0  500 500))
-      (outline (path signal 150  -500 500  -500 -500))
-      (pin Rect[B]Pad_1300x950_um 1 -1775 0)
-      (pin Rect[B]Pad_1300x950_um 2 1775 0)
     )
     (image Button_Switch_SMD:SW_SPST_CK_RS282G05A3
       (outline (path signal 100  3000 1800  3000 -1800))
@@ -504,10 +500,6 @@
       (shape (rect B.Cu -1275 -1250 1275 1250))
       (attach off)
     )
-    (padstack Rect[B]Pad_1300x950_um
-      (shape (rect B.Cu -650 -475 650 475))
-      (attach off)
-    )
     (padstack Rect[T]Pad_2100x1800_um
       (shape (rect F.Cu -1050 -900 1050 900))
       (attach off)
@@ -538,6 +530,10 @@
     )
     (padstack Rect[T]Pad_1200x1400_um
       (shape (rect F.Cu -600 -700 600 700))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1300x950_um
+      (shape (rect F.Cu -650 -475 650 475))
       (attach off)
     )
     (padstack Rect[T]Pad_1500x2200_um
@@ -836,15 +832,12 @@
     )
     (class kicad_default "" +3.3V +5V D+ "D-" GND "Net-(C1-Pad1)" "Net-(C2-Pad1)"
       "Net-(C3-Pad1)" "Net-(D1-Pad2)" "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)"
-      "Net-(D14-Pad2)" "Net-(D15-Pad2)" "Net-(D2-Pad2)" "Net-(D21-Pad2)" "Net-(D22-Pad2)"
-      "Net-(D23-Pad2)" "Net-(D24-Pad2)" "Net-(D25-Pad2)" "Net-(D3-Pad2)" "Net-(D31-Pad2)"
-      "Net-(D32-Pad2)" "Net-(D33-Pad2)" "Net-(D34-Pad2)" "Net-(D35-Pad2)"
-      "Net-(D4-Pad2)" "Net-(D41-Pad2)" "Net-(D42-Pad2)" "Net-(D43-Pad2)" "Net-(D44-Pad2)"
-      "Net-(D45-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D6-Pad3)" "Net-(R1-Pad2)"
+      "Net-(D14-Pad2)" "Net-(D2-Pad2)" "Net-(D21-Pad2)" "Net-(D22-Pad2)" "Net-(D23-Pad2)"
+      "Net-(D24-Pad2)" "Net-(D3-Pad2)" "Net-(D31-Pad2)" "Net-(D32-Pad2)" "Net-(D33-Pad2)"
+      "Net-(D34-Pad2)" "Net-(D4-Pad2)" "Net-(D6-Pad2)" "Net-(D6-Pad3)" "Net-(R1-Pad2)"
       "Net-(R2-Pad2)" "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(U1-Pad12)" "Net-(U1-Pad18)"
       "Net-(U1-Pad19)" "Net-(U1-Pad22)" "Net-(U1-Pad26)" "Net-(U1-Pad30)"
-      "Net-(U1-Pad32)" "Net-(U1-Pad38)" "Net-(U1-Pad39)" "Net-(U1-Pad40)"
-      "Net-(U1-Pad41)" "Net-(U1-Pad42)" "Net-(U1-Pad8)" "Net-(USB1-Pad3)"
+      "Net-(U1-Pad32)" "Net-(U1-Pad42)" "Net-(U1-Pad8)" "Net-(USB1-Pad3)"
       "Net-(USB1-Pad9)" "Net-(nrf1-Pad1)" "Net-(nrf1-Pad10)" "Net-(nrf1-Pad14)"
       "Net-(nrf1-Pad15)" "Net-(nrf1-Pad16)" "Net-(nrf1-Pad17)" "Net-(nrf1-Pad18)"
       "Net-(nrf1-Pad19)" "Net-(nrf1-Pad2)" "Net-(nrf1-Pad20)" "Net-(nrf1-Pad21)"
@@ -852,15 +845,8 @@
       "Net-(nrf1-Pad28)" "Net-(nrf1-Pad29)" "Net-(nrf1-Pad3)" "Net-(nrf1-Pad30)"
       "Net-(nrf1-Pad33)" "Net-(nrf1-Pad34)" "Net-(nrf1-Pad35)" "Net-(nrf1-Pad36)"
       "Net-(nrf1-Pad6)" "Net-(nrf1-Pad7)" "Net-(nrf1-Pad8)" "Net-(nrf1-Pad9)"
-      "Net-(uC1-Pad10)" "Net-(uC1-Pad13)" "Net-(uC1-Pad14)" "Net-(uC1-Pad15)"
-      "Net-(uC1-Pad16)" "Net-(uC1-Pad17)" "Net-(uC1-Pad18)" "Net-(uC1-Pad19)"
-      "Net-(uC1-Pad2)" "Net-(uC1-Pad20)" "Net-(uC1-Pad21)" "Net-(uC1-Pad22)"
-      "Net-(uC1-Pad23)" "Net-(uC1-Pad24)" "Net-(uC1-Pad25)" "Net-(uC1-Pad26)"
-      "Net-(uC1-Pad27)" "Net-(uC1-Pad28)" "Net-(uC1-Pad29)" "Net-(uC1-Pad3)"
-      "Net-(uC1-Pad30)" "Net-(uC1-Pad33)" "Net-(uC1-Pad34)" "Net-(uC1-Pad35)"
-      "Net-(uC1-Pad36)" "Net-(uC1-Pad4)" "Net-(uC1-Pad7)" "Net-(uC1-Pad8)"
-      "Net-(uC1-Pad9)" POF0 POF1 POF4 POF5 RGB_DATA RXI SWCLK SWDIO TXO TXODIV
-      VCC col0 col1 col2 col3 col4 row0 row1 row2 row3 row4
+      POF0 POF1 POF4 POF5 RGB_DATA RXI SWCLK SWDIO TXO TXODIV VCC col0 col1
+      col2 col3 col4 row0 row1 row2 row3 row4
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
@@ -873,33 +859,27 @@
   (wiring
     (wire (path B.Cu 250  107435 -96790  109735 -99090)(net GND)(type protect))
     (wire (path B.Cu 250  107435 -96340  107435 -96790)(net GND)(type protect))
+    (wire (path B.Cu 250  109735 -102110  109610 -102235)(net GND)(type protect))
+    (wire (path B.Cu 250  109735 -99240  109735 -102110)(net GND)(type protect))
+    (wire (path B.Cu 250  109610 -93345  111125 -93345  112395 -94615  112395 -96430)(net GND)(type protect))
     (wire (path B.Cu 250  109735 -99090  109735 -99240)(net GND)(type protect))
-    (wire (path B.Cu 250  112088 -99240  109735 -99240)(net GND)(type protect))
-    (wire (path B.Cu 250  112522 -98806  112088 -99240)(net GND)(type protect))
-    (wire (path B.Cu 250  112522 -94234  112522 -98806)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -93345  111633 -93345  112522 -94234)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -99365  109735 -99240)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -102235  109610 -99365)(net GND)(type protect))
+    (wire (path B.Cu 250  112395 -96430  109735 -99090)(net GND)(type protect))
+    (wire (path B.Cu 250  109610 -102235  107705 -104140  100965 -104140)(net GND)(type protect))
+    (wire (path B.Cu 250  100315 -103490  99250 -103490)(net GND)(type protect))
+    (wire (path B.Cu 250  100965 -104140  100315 -103490)(net GND)(type protect))
+    (wire (path B.Cu 250  109610 -93345  109610 -91830  109220 -91440)(net GND)(type protect))
     (wire (path B.Cu 250  101950 -96190  100950 -96190)(net GND)(type protect))
-    (wire (path B.Cu 250  105820 -92320  101950 -96190)(net GND)(type protect))
-    (wire (path B.Cu 250  109385 -92320  105820 -92320)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -92545  109385 -92320)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -93345  109610 -92545)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -102235  107451 -104394  102616 -104394)(net GND)(type protect))
-    (wire (path B.Cu 250  101712 -103490  99250 -103490)(net GND)(type protect))
-    (wire (path B.Cu 250  102616 -104394  101712 -103490)(net GND)(type protect))
+    (wire (path B.Cu 250  106700 -91440  101950 -96190)(net GND)(type protect))
+    (wire (path B.Cu 250  109220 -91440  106700 -91440)(net GND)(type protect))
     (wire (path B.Cu 250  101950 -97790  100950 -97790)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  104835 -97790  101950 -97790)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  106285 -99240  104835 -97790)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  107435 -99240  106285 -99240)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  107435 -102110  107560 -102235)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  107435 -99240  107435 -102110)(net "Net-(C2-Pad1)")(type protect))
-    (wire (path B.Cu 250  107560 -94015  107560 -93345)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  109735 -96190  107560 -94015)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  109735 -96340  109735 -96190)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  101950 -96990  100950 -96990)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  103240 -96990  101950 -96990)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  106885 -93345  103240 -96990)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  107560 -93345  106885 -93345)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  103915 -96990  100950 -96990)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  107560 -93345  103915 -96990)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  109735 -95520  109735 -96340)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  107560 -93345  109735 -95520)(net "Net-(C1-Pad1)")(type protect))
   )
 )
