@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1629)
+    (start_pass_no 6743)
     (layer_rule F.Cu
-      (active on)
-      (preferred_direction vertical)
-      (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.9)
-    )
-    (layer_rule B.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.5)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
     )
   )
   (rule
@@ -63,16 +63,16 @@
     )
   )
   (class "kicad_default"
-    GND "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" +5V VCC +3.3V "Net-(D6-Pad3)"
-    "Net-(D6-Pad2)" SWDIO SWCLK "Net-(nrf1-Pad10)" "Net-(nrf1-Pad9)" "Net-(nrf1-Pad8)" "Net-(nrf1-Pad7)" "Net-(nrf1-Pad6)"
-    TXODIV RXI "Net-(nrf1-Pad3)" "Net-(nrf1-Pad2)" "Net-(nrf1-Pad36)" "Net-(nrf1-Pad35)" "Net-(nrf1-Pad34)" "Net-(nrf1-Pad33)"
-    "Net-(nrf1-Pad30)" "Net-(nrf1-Pad29)" "Net-(nrf1-Pad28)" "Net-(nrf1-Pad27)" "Net-(nrf1-Pad26)" "Net-(nrf1-Pad23)" "Net-(nrf1-Pad22)" "Net-(nrf1-Pad21)"
-    "Net-(nrf1-Pad20)" "Net-(nrf1-Pad19)" "Net-(nrf1-Pad18)" "Net-(nrf1-Pad17)" "Net-(nrf1-Pad16)" "Net-(nrf1-Pad15)" "Net-(nrf1-Pad14)" "Net-(nrf1-Pad1)"
-    "Net-(R1-Pad2)" "Net-(R2-Pad2)" D+ "D-" "Net-(R5-Pad2)" "Net-(R6-Pad2)" TXO "Net-(U1-Pad42)"
-    "Net-(U1-Pad41)" "Net-(U1-Pad40)" "Net-(U1-Pad39)" "Net-(U1-Pad38)" "Net-(U1-Pad37)" "Net-(U1-Pad36)" "Net-(U1-Pad32)" "Net-(U1-Pad31)"
-    "Net-(U1-Pad30)" "Net-(U1-Pad29)" "Net-(U1-Pad28)" "Net-(U1-Pad27)" "Net-(U1-Pad26)" "Net-(U1-Pad25)" "Net-(U1-Pad22)" "Net-(U1-Pad19)"
-    "Net-(U1-Pad18)" "Net-(U1-Pad12)" "Net-(U1-Pad11)" "Net-(U1-Pad10)" "Net-(U1-Pad9)" "Net-(U1-Pad8)" "Net-(U1-Pad1)" "Net-(USB1-Pad3)"
-    "Net-(USB1-Pad9)"
+    GND "Net-(C1-Pad1)" "Net-(C2-Pad1)" "Net-(C3-Pad1)" +5V VCC +3.3V "Net-(D1-Pad2)"
+    P5 "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D6-Pad3)" "Net-(D6-Pad2)" SWDIO SWCLK
+    "Net-(nrf1-Pad10)" "Net-(nrf1-Pad9)" "Net-(nrf1-Pad8)" "Net-(nrf1-Pad7)" "Net-(nrf1-Pad6)" TXODIV RXI "Net-(nrf1-Pad3)"
+    "Net-(nrf1-Pad2)" "Net-(nrf1-Pad36)" "Net-(nrf1-Pad35)" "Net-(nrf1-Pad34)" "Net-(nrf1-Pad33)" "Net-(nrf1-Pad30)" "Net-(nrf1-Pad29)" "Net-(nrf1-Pad28)"
+    "Net-(nrf1-Pad27)" "Net-(nrf1-Pad26)" "Net-(nrf1-Pad23)" "Net-(nrf1-Pad22)" "Net-(nrf1-Pad21)" "Net-(nrf1-Pad20)" "Net-(nrf1-Pad19)" "Net-(nrf1-Pad18)"
+    "Net-(nrf1-Pad17)" "Net-(nrf1-Pad16)" "Net-(nrf1-Pad15)" "Net-(nrf1-Pad14)" "Net-(nrf1-Pad1)" "Net-(R1-Pad2)" "Net-(R2-Pad2)" D+
+    "D-" "Net-(R5-Pad2)" "Net-(R6-Pad2)" TXO "Net-(U1-Pad42)" "Net-(U1-Pad41)" "Net-(U1-Pad40)" "Net-(U1-Pad39)"
+    "Net-(U1-Pad38)" "Net-(U1-Pad37)" "Net-(U1-Pad36)" "Net-(U1-Pad32)" "Net-(U1-Pad31)" "Net-(U1-Pad30)" "Net-(U1-Pad28)" "Net-(U1-Pad27)"
+    "Net-(U1-Pad26)" "Net-(U1-Pad25)" "Net-(U1-Pad22)" "Net-(U1-Pad19)" "Net-(U1-Pad18)" "Net-(U1-Pad12)" "Net-(U1-Pad11)" "Net-(U1-Pad10)"
+    "Net-(U1-Pad9)" "Net-(U1-Pad8)" "Net-(U1-Pad1)" "Net-(USB1-Pad3)" "Net-(USB1-Pad9)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

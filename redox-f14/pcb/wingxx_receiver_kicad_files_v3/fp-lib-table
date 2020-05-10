@@ -8,4 +8,5 @@
   (lib (name "Mixed Lib")(type KiCad)(uri "C:/gitrepo/redox-keyboard-f14/redox-f14/kicad/library/Mixed Lib")(options "")(descr ""))
   (lib (name Keebio-Parts)(type KiCad)(uri ${KIPRJMOD}/parts/Keebio-Parts.pretty-master)(options "")(descr ""))
   (lib (name wingxx-receiver)(type KiCad)(uri ${KIPRJMOD}/parts/wingxx-receiver)(options "")(descr ""))
+  (lib (name XC6206P332MR)(type Legacy)(uri F:/msys64/home/f14eagle/gitrepo/f14-kicad/library/XC6206P332MR/KiCad/XC6206P332MR.mod)(options "")(descr ""))
 )
