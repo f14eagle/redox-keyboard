@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name pcb)(type KiCad)(uri C:/gitrepo/newsplit/pcb)(options "")(descr ""))
+  (lib (name pcb)(type KiCad)(uri F:/msys64/home/f14eagle/gitrepo/newsplit/pcb)(options "")(descr ""))
   (lib (name keyswitches)(type KiCad)(uri F:/msys64/home/f14eagle/kicad-lib/keyswitches.pretty)(options "")(descr ""))
   (lib (name keebs)(type KiCad)(uri F:/msys64/home/f14eagle/kicad-lib/keebs.pretty)(options "")(descr ""))
   (lib (name redox_w_footprints)(type KiCad)(uri F:/msys64/home/f14eagle/gitrepo/newsplit/pcb/redox_w_footprints.pretty)(options "")(descr ""))
@@ -8,4 +8,5 @@
   (lib (name "Mixed Lib")(type KiCad)(uri "F:/msys64/home/f14eagle/gitrepo/redox-keyboard-f14/redox-f14/kicad/library/Mixed Lib")(options "")(descr ""))
   (lib (name Keebio-Parts)(type KiCad)(uri ${KIPRJMOD}/parts/Keebio-Parts.pretty-master)(options "")(descr ""))
   (lib (name wingxx-receiver)(type KiCad)(uri ${KIPRJMOD}/parts/wingxx-receiver)(options "")(descr ""))
+  (lib (name XC6206P332MR)(type Legacy)(uri F:/msys64/home/f14eagle/gitrepo/f14-kicad/library/XC6206P332MR/KiCad/XC6206P332MR.mod)(options "")(descr ""))
 )

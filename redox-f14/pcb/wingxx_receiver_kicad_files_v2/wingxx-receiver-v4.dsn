@@ -1,4 +1,4 @@
-(pcb "C:\gitrepo\redox-keyboard\redox-f14\pcb\wingxx_receiver_kicad_files_v2\wingxx-receiver-v4.dsn"
+(pcb "F:\msys64\home\f14eagle\gitrepo\redox-keyboard-f14\redox-f14\pcb\wingxx_receiver_kicad_files_v2\wingxx-receiver-v4.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -21,14 +21,14 @@
       )
     )
     (boundary
-      (path pcb 0  153670 -62230  153670 -144780  149860 -148590  136398 -148590
-            136398 -134620  127254 -134620  127254 -148590  78740 -148590
+      (path pcb 0  153670 -62230  153670 -144780  149860 -148590  134493 -148654
+            134493 -128651  128016 -128651  128016 -148590  78740 -148590
             74930 -144780  74930 -62230  78740 -58420  149860 -58420  153670 -62230)
     )
-    (keepout "" (polygon F.Cu 0  105410 -93980  111760 -93980  111760 -101600  105410 -101600
-            105410 -93980))
-    (keepout "" (polygon B.Cu 0  105410 -93980  111760 -93980  111760 -101600  105410 -101600
-            105410 -93980))
+    (keepout "" (polygon F.Cu 0  106045 -94615  111125 -94615  111125 -100965  106045 -100965
+            106045 -94615))
+    (keepout "" (polygon B.Cu 0  106045 -94615  111125 -94615  111125 -100965  106045 -100965
+            106045 -94615))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -38,27 +38,50 @@
     )
   )
   (placement
+    (component "XC6206P332MR:SOT95P280X130-3N"
+      (place IC2 127127 -62325.2 back 0 (PN XC6206P332MR))
+    )
+    (component Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+      (place C12 134271 -64008 back 180 (PN 1uF))
+      (place C11 134271 -61087 back 180 (PN 1uF))
+      (place R6 118110 -100965 back 0 (PN 1K))
+      (place R5 118110 -97790 back 180 (PN 10K))
+      (place R4 90170 -63500 back 90 (PN 22))
+      (place R3 86360 -63500 back 90 (PN 22))
+      (place R2 82550 -63500 back 90 (PN 5.1K))
+      (place R1 78740 -63500 back 90 (PN 5.1K))
+      (place C7 86360 -100330 back 90 (PN 10uF))
+      (place C6 86360 -95250 back 90 (PN 100nF))
+      (place C5 95250 -106680 back 180 (PN 100nF))
+      (place C4 95250 -88900 back 0 (PN 100nF))
+      (place C3 118110 -94615 back 0 (PN 1uF))
+      (place C2 108585 -102235 back 180 (PN 22pF))
+      (place C1 108585 -93345 back 180 (PN 22pF))
+      (place R13 98679 -133350 back 0 (PN 1.5K))
+      (place R12 98679 -137160 back 0 (PN 1.5K))
+      (place R11 98679 -140970 back 0 (PN 1.5K))
+    )
     (component pcb:D3_SMD_Front
-      (place D1 85852 -77470 back 180 (PN D))
-      (place D2 104648 -77470 back 180 (PN D))
-      (place D3 123952 -77470 back 180 (PN D))
-      (place D4 143002 -77470 back 180 (PN D))
-      (place D11 85852 -79756 back 180 (PN D))
-      (place D12 104648 -79756 back 180 (PN D))
-      (place D13 123952 -79756 back 180 (PN D))
-      (place D14 143002 -79756 back 180 (PN D))
-      (place D21 85598 -115570 back 180 (PN D))
-      (place D22 104902 -115570 back 180 (PN D))
-      (place D23 123698 -115570 back 180 (PN D))
-      (place D24 143002 -115570 back 180 (PN D))
-      (place D31 85598 -117856 back 180 (PN D))
-      (place D32 104902 -117856 back 180 (PN D))
-      (place D33 123698 -117856 back 180 (PN D))
       (place D34 143002 -117856 back 180 (PN D))
+      (place D33 123698 -117856 back 180 (PN D))
+      (place D32 104902 -117856 back 180 (PN D))
+      (place D31 85598 -117856 back 180 (PN D))
+      (place D24 143002 -115570 back 180 (PN D))
+      (place D23 123698 -115570 back 180 (PN D))
+      (place D22 104902 -115570 back 180 (PN D))
+      (place D21 85598 -115570 back 180 (PN D))
+      (place D14 143002 -79756 back 180 (PN D))
+      (place D13 123952 -79756 back 180 (PN D))
+      (place D12 104648 -79756 back 180 (PN D))
+      (place D11 85852 -79756 back 180 (PN D))
+      (place D4 143002 -77470 back 180 (PN D))
+      (place D3 123952 -77470 back 180 (PN D))
+      (place D2 104648 -77470 back 180 (PN D))
+      (place D1 85852 -77470 back 180 (PN D))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical
-      (place PROGR_HEADER2 90170 -135636 front 90 (PN Conn_01x04_Female))
-      (place PROGR_HEADER1 80518 -141224 front 180 (PN Conn_01x04_Female))
+      (place PROGR_HEADER2 76835 -93980 front 0 (PN Conn_01x04_Female))
+      (place PROGR_HEADER1 100965 -145415 front 270 (PN Conn_01x04_Female))
     )
     (component "wingxx-receiver:E73-nrf51822-Module"
       (place nrf1 105410 -139700 back 270 (PN "E73-nrf51822"))
@@ -72,26 +95,6 @@
     (component Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder
       (place F1 105410 -62230 back 90 (PN "MF-NSMF050-2"))
     )
-    (component Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (place R6 81534 -97790 back 0 (PN 1K))
-      (place R5 81534 -94234 back 180 (PN 10K))
-      (place R4 90170 -63500 back 90 (PN 22))
-      (place R3 86360 -63500 back 90 (PN 22))
-      (place R2 82550 -63500 back 90 (PN 5.1K))
-      (place R1 78740 -63500 back 90 (PN 5.1K))
-      (place C12 127000 -95250 back 90 (PN 10uF))
-      (place C11 127000 -100330 back 90 (PN 10uF))
-      (place C7 86360 -100330 back 90 (PN 10uF))
-      (place C6 86360 -95250 back 90 (PN 100nF))
-      (place C5 95250 -106680 back 180 (PN 100nF))
-      (place C4 95250 -88900 back 0 (PN 100nF))
-      (place C3 81534 -101346 back 0 (PN 1uF))
-      (place C2 108585 -102235 back 180 (PN 22pF))
-      (place C1 108585 -93345 back 180 (PN 22pF))
-      (place R13 97790 -141224 back 270 (PN 1.5K))
-      (place R12 93980 -141224 back 270 (PN 1.5K))
-      (place R11 90170 -141224 back 270 (PN 1.5K))
-    )
     (component "Package_QFP:TQFP-44_10x10mm_P0.8mm"
       (place U1 95250 -97790 back 90 (PN "ATmega32U4-AU"))
     )
@@ -101,11 +104,8 @@
     (component "Type-C:HRO-TYPE-C-31-M-12-HandSoldering"
       (place USB1 114300 -57150 back 180 (PN "HRO-TYPE-C-31-M-12"))
     )
-    (component "redox_w_receiver_footprints:SOT-223"
-      (place V_REG1 120650 -97790 back 0 (PN LD1117S33CTR))
-    )
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (place ConnFemale_Underglow1 140970 -63500 front 90 (PN Conn_01x03_Female))
+      (place ConnFemale_Underglow1 81280 -145415 front 90 (PN Conn_01x03_Female))
     )
     (component keyswitches:Kailh_socket
       (place K34 142875 -126206 front 0 (PN "KEYSW-redox_rev1-rescue"))
@@ -127,6 +127,39 @@
     )
   )
   (library
+    (image "XC6206P332MR:SOT95P280X130-3N"
+      (outline (path signal 200  -1850 1500  -950 1500))
+      (outline (path signal 200  -600 -1450  -600 1450))
+      (outline (path signal 200  600 -1450  -600 -1450))
+      (outline (path signal 200  600 1450  600 -1450))
+      (outline (path signal 200  -600 1450  600 1450))
+      (outline (path signal 100  -825 500  125 1450))
+      (outline (path signal 100  -825 -1450  -825 1450))
+      (outline (path signal 100  825 -1450  -825 -1450))
+      (outline (path signal 100  825 1450  825 -1450))
+      (outline (path signal 100  -825 1450  825 1450))
+      (outline (path signal 50  -2100 -1800  -2100 1800))
+      (outline (path signal 50  2100 -1800  -2100 -1800))
+      (outline (path signal 50  2100 1800  2100 -1800))
+      (outline (path signal 50  -2100 1800  2100 1800))
+      (pin Rect[T]Pad_600x900_um (rotate 90) 3 1400 0)
+      (pin Rect[T]Pad_600x900_um (rotate 90) 2 -1400 -950)
+      (pin Rect[T]Pad_600x900_um (rotate 90) 1 -1400 950)
+    )
+    (image Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+      (outline (path signal 50  1850 -950  -1850 -950))
+      (outline (path signal 50  1850 950  1850 -950))
+      (outline (path signal 50  -1850 950  1850 950))
+      (outline (path signal 50  -1850 -950  -1850 950))
+      (outline (path signal 120  -261.252 -710  261.252 -710))
+      (outline (path signal 120  -261.252 710  261.252 710))
+      (outline (path signal 100  1000 -600  -1000 -600))
+      (outline (path signal 100  1000 600  1000 -600))
+      (outline (path signal 100  -1000 600  1000 600))
+      (outline (path signal 100  -1000 -600  -1000 600))
+      (pin RoundRect[T]Pad_1150x1400_250.95_um 2 1025 0)
+      (pin RoundRect[T]Pad_1150x1400_250.95_um 1 -1025 0)
+    )
     (image pcb:D3_SMD_Front
       (outline (path signal 150  -2700 -750  2700 -750))
       (outline (path signal 150  2700 750  -2700 750))
@@ -258,20 +291,6 @@
       (pin RoundRect[T]Pad_1425x1750_250.951_um 2 1487.5 0)
       (pin RoundRect[T]Pad_1425x1750_250.951_um 1 -1487.5 0)
     )
-    (image Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder
-      (outline (path signal 50  1850 -950  -1850 -950))
-      (outline (path signal 50  1850 950  1850 -950))
-      (outline (path signal 50  -1850 950  1850 950))
-      (outline (path signal 50  -1850 -950  -1850 950))
-      (outline (path signal 120  -261.252 -710  261.252 -710))
-      (outline (path signal 120  -261.252 710  261.252 710))
-      (outline (path signal 100  1000 -600  -1000 -600))
-      (outline (path signal 100  1000 600  1000 -600))
-      (outline (path signal 100  -1000 600  1000 600))
-      (outline (path signal 100  -1000 -600  -1000 600))
-      (pin RoundRect[T]Pad_1150x1400_250.95_um 2 1025 0)
-      (pin RoundRect[T]Pad_1150x1400_250.95_um 1 -1025 0)
-    )
     (image "Package_QFP:TQFP-44_10x10mm_P0.8mm"
       (outline (path signal 150  -5175 4600  -6450 4600))
       (outline (path signal 150  5175 5175  4500 5175))
@@ -379,30 +398,6 @@
       (keepout "" (circle F.Cu 650 -2890 6250))
       (keepout "" (circle B.Cu 650 -2890 6250))
     )
-    (image "redox_w_receiver_footprints:SOT-223"
-      (outline (path signal 100  3150 1650  3150 -1650))
-      (outline (path signal 100  -3150 1650  3150 1650))
-      (outline (path signal 100  3275 1775  3275 1475))
-      (outline (path signal 100  2900 1775  3275 1775))
-      (outline (path signal 100  -3275 1775  -3275 1375))
-      (outline (path signal 100  -2775 1775  -3275 1775))
-      (outline (path signal 100  3275 -1775  2825 -1775))
-      (outline (path signal 100  3275 -1300  3275 -1775))
-      (outline (path signal 100  -3150 -1350  -2875 -1650))
-      (outline (path signal 100  3150 -1650  -2875 -1650))
-      (outline (path signal 100  -3150 -1350  -3150 1650))
-      (outline (path signal 50  3450 4450  3450 -4450))
-      (outline (path signal 50  3450 4450  -3450 4450))
-      (outline (path signal 50  -3450 4450  -3450 -4450))
-      (outline (path signal 50  -3450 -4450  3450 -4450))
-      (outline (path signal 100  -2975 -1775  -2975 -1970))
-      (outline (path signal 100  -3275 -1450  -2975 -1775))
-      (outline (path signal 100  -3275 -975  -3275 -1450))
-      (pin Rect[T]Pad_3800x2200_um 4 0 3150)
-      (pin Rect[T]Pad_1500x2200_um 1 -2300 -3150)
-      (pin Rect[T]Pad_1500x2200_um 2 0 -3150)
-      (pin Rect[T]Pad_1500x2200_um 3 2300 -3150)
-    )
     (image Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
       (outline (path signal 50  1800 1800  -1800 1800))
       (outline (path signal 50  1800 -6850  1800 1800))
@@ -508,12 +503,12 @@
       (shape (rect F.Cu -150 -1225 150 1225))
       (attach off)
     )
-    (padstack Rect[T]Pad_3800x2200_um
-      (shape (rect F.Cu -1900 -1100 1900 1100))
-      (attach off)
-    )
     (padstack Rect[T]Pad_600x2450_um
       (shape (rect F.Cu -300 -1225 300 1225))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_600x900_um
+      (shape (rect F.Cu -300 -450 300 450))
       (attach off)
     )
     (padstack Rect[T]Pad_698.5x1198.88_um
@@ -534,10 +529,6 @@
     )
     (padstack Rect[T]Pad_1300x950_um
       (shape (rect F.Cu -650 -475 650 475))
-      (attach off)
-    )
-    (padstack Rect[T]Pad_1500x2200_um
-      (shape (rect F.Cu -750 -1100 750 1100))
       (attach off)
     )
     (padstack Rect[T]Pad_1500x550_um
@@ -564,7 +555,7 @@
       (pins D1-2 K1-2)
     )
     (net row0
-      (pins D1-1 D2-1 D3-1 D4-1 U1-25)
+      (pins D4-1 D3-1 D2-1 D1-1 U1-25)
     )
     (net "Net-(D2-Pad2)"
       (pins D2-2 K2-2)
@@ -579,7 +570,7 @@
       (pins D11-2 K11-2)
     )
     (net row1
-      (pins D11-1 D12-1 D13-1 D14-1 U1-31)
+      (pins D14-1 D13-1 D12-1 D11-1 U1-31)
     )
     (net "Net-(D12-Pad2)"
       (pins D12-2 K12-2)
@@ -594,7 +585,7 @@
       (pins D21-2 K21-2)
     )
     (net row2
-      (pins D21-1 D22-1 D23-1 D24-1 U1-27)
+      (pins D24-1 D23-1 D22-1 D21-1 U1-27)
     )
     (net "Net-(D22-Pad2)"
       (pins D22-2 K22-2)
@@ -609,7 +600,7 @@
       (pins D31-2 K31-2)
     )
     (net row3
-      (pins D31-1 D32-1 D33-1 D34-1 U1-1)
+      (pins D34-1 D33-1 D32-1 D31-1 U1-1)
     )
     (net "Net-(D32-Pad2)"
       (pins D32-2 K32-2)
@@ -639,9 +630,9 @@
       (pins U1-10)
     )
     (net GND
-      (pins nrf1-12 nrf1-13 nrf1-25 nrf1-24 RESET1-2 X1-4 X1-2 R6-1 R2-1 R1-1 C12-2
-        C11-2 C7-1 C6-1 C5-1 C4-1 C3-2 C2-2 C1-2 U1-43 U1-35 U1-23 U1-15 U1-5 D6-1
-        USB1-12 USB1-1 USB1-13 USB1-13@1 USB1-13@2 USB1-13@3 V_REG1-1 ConnFemale_Underglow1-3
+      (pins IC2-1 C12-1 C11-1 nrf1-12 nrf1-13 nrf1-25 nrf1-24 RESET1-2 X1-4 X1-2 R6-1
+        R2-1 R1-1 C7-1 C6-1 C5-1 C4-1 C3-2 C2-2 C1-2 U1-43 U1-35 U1-23 U1-15 U1-5
+        D6-1 USB1-12 USB1-1 USB1-13 USB1-13@1 USB1-13@2 USB1-13@3 ConnFemale_Underglow1-3
         R12-2 PROGR_HEADER1-2)
     )
     (net RXI
@@ -657,7 +648,7 @@
       (pins nrf1-31 PROGR_HEADER1-3)
     )
     (net VCC
-      (pins F1-2 C11-1 D6-4 USB1-11 USB1-2 V_REG1-3)
+      (pins IC2-3 C11-2 F1-2 D6-4 USB1-11 USB1-2)
     )
     (net TXODIV
       (pins nrf1-5 R13-2 R12-1 R11-2)
@@ -684,7 +675,7 @@
       (pins R3-2 D6-2 USB1-8 USB1-6)
     )
     (net +3.3V
-      (pins nrf1-11 C12-1 V_REG1-4 V_REG1-2 PROGR_HEADER1-1)
+      (pins IC2-2 C12-2 nrf1-11 PROGR_HEADER1-1)
     )
     (net "Net-(R5-Pad2)"
       (pins RESET1-1 R5-2 U1-13)
@@ -832,9 +823,11 @@
     )
     (class kicad_default "" +3.3V +5V D+ "D-" GND "Net-(C1-Pad1)" "Net-(C2-Pad1)"
       "Net-(C3-Pad1)" "Net-(D1-Pad2)" "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)"
-      "Net-(D14-Pad2)" "Net-(D2-Pad2)" "Net-(D21-Pad2)" "Net-(D22-Pad2)" "Net-(D23-Pad2)"
-      "Net-(D24-Pad2)" "Net-(D3-Pad2)" "Net-(D31-Pad2)" "Net-(D32-Pad2)" "Net-(D33-Pad2)"
-      "Net-(D34-Pad2)" "Net-(D4-Pad2)" "Net-(D6-Pad2)" "Net-(D6-Pad3)" "Net-(R1-Pad2)"
+      "Net-(D14-Pad2)" "Net-(D15-Pad2)" "Net-(D2-Pad2)" "Net-(D21-Pad2)" "Net-(D22-Pad2)"
+      "Net-(D23-Pad2)" "Net-(D24-Pad2)" "Net-(D25-Pad2)" "Net-(D3-Pad2)" "Net-(D31-Pad2)"
+      "Net-(D32-Pad2)" "Net-(D33-Pad2)" "Net-(D34-Pad2)" "Net-(D35-Pad2)"
+      "Net-(D4-Pad2)" "Net-(D41-Pad2)" "Net-(D42-Pad2)" "Net-(D43-Pad2)" "Net-(D44-Pad2)"
+      "Net-(D45-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(D6-Pad3)" "Net-(R1-Pad2)"
       "Net-(R2-Pad2)" "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(U1-Pad12)" "Net-(U1-Pad18)"
       "Net-(U1-Pad19)" "Net-(U1-Pad22)" "Net-(U1-Pad26)" "Net-(U1-Pad30)"
       "Net-(U1-Pad32)" "Net-(U1-Pad42)" "Net-(U1-Pad8)" "Net-(USB1-Pad3)"
@@ -857,29 +850,24 @@
     )
   )
   (wiring
+    (wire (path B.Cu 250  109735 -99090  109735 -99240)(net GND)(type protect))
     (wire (path B.Cu 250  107435 -96790  109735 -99090)(net GND)(type protect))
     (wire (path B.Cu 250  107435 -96340  107435 -96790)(net GND)(type protect))
-    (wire (path B.Cu 250  109735 -102110  109610 -102235)(net GND)(type protect))
-    (wire (path B.Cu 250  109735 -99240  109735 -102110)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -93345  111125 -93345  112395 -94615  112395 -96430)(net GND)(type protect))
-    (wire (path B.Cu 250  109735 -99090  109735 -99240)(net GND)(type protect))
-    (wire (path B.Cu 250  112395 -96430  109735 -99090)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -102235  107705 -104140  100965 -104140)(net GND)(type protect))
-    (wire (path B.Cu 250  100315 -103490  99250 -103490)(net GND)(type protect))
-    (wire (path B.Cu 250  100965 -104140  100315 -103490)(net GND)(type protect))
-    (wire (path B.Cu 250  109610 -93345  109610 -91830  109220 -91440)(net GND)(type protect))
-    (wire (path B.Cu 250  101950 -96190  100950 -96190)(net GND)(type protect))
-    (wire (path B.Cu 250  106700 -91440  101950 -96190)(net GND)(type protect))
-    (wire (path B.Cu 250  109220 -91440  106700 -91440)(net GND)(type protect))
+    (wire (path B.Cu 250  110885 -99240  112395 -97730)(net GND)(type protect))
+    (wire (path B.Cu 250  109735 -99240  110885 -99240)(net GND)(type protect))
+    (wire (path B.Cu 250  112395 -97730  112395 -96130  109610 -93345)(net GND)(type protect))
+    (wire (path B.Cu 250  109610 -99365  109735 -99240)(net GND)(type protect))
+    (wire (path B.Cu 250  109610 -102235  109610 -99365)(net GND)(type protect))
     (wire (path B.Cu 250  101950 -97790  100950 -97790)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  104835 -97790  101950 -97790)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  106285 -99240  104835 -97790)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  107435 -99240  106285 -99240)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  107435 -102110  107560 -102235)(net "Net-(C2-Pad1)")(type protect))
     (wire (path B.Cu 250  107435 -99240  107435 -102110)(net "Net-(C2-Pad1)")(type protect))
+    (wire (path B.Cu 250  108183 -93968.4  107560 -93345)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  109735 -95520  108183 -93968.4)(net "Net-(C1-Pad1)")(type protect))
+    (wire (path B.Cu 250  109735 -96340  109735 -95520)(net "Net-(C1-Pad1)")(type protect))
     (wire (path B.Cu 250  103915 -96990  100950 -96990)(net "Net-(C1-Pad1)")(type protect))
     (wire (path B.Cu 250  107560 -93345  103915 -96990)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  109735 -95520  109735 -96340)(net "Net-(C1-Pad1)")(type protect))
-    (wire (path B.Cu 250  107560 -93345  109735 -95520)(net "Net-(C1-Pad1)")(type protect))
   )
 )

@@ -227,6 +227,25 @@ X SBU1 9 100 -250 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# f14_v60_v2-cache_f14_v60-rescue_XC6206P332MR-XC6206P332MR
+#
+DEF f14_v60_v2-cache_f14_v60-rescue_XC6206P332MR-XC6206P332MR IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "f14_v60_v2-cache_f14_v60-rescue_XC6206P332MR-XC6206P332MR" 950 200 50 H V L CNN
+F2 "SOT95P280X130-3N" 950 100 50 H I L CNN
+F3 "http://www.torexsemi.com/products/voltage_regulators/data/XC6206.pdf" 950 0 50 H I L CNN
+F4 "Low ESR Cap.Compatible Postive Voltage Regulators" 950 -100 50 H I L CNN "Description"
+F5 "1.3" 950 -200 50 H I L CNN "Height"
+F6 "Torex" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "XC6206P332MR" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -200 200 -200 200 100 N
+X VSS 1 0 0 200 R 50 50 0 0 W
+X VOUT 2 0 -100 200 R 50 50 0 0 O
+X VIN 3 1100 0 200 L 50 50 0 0 I
+ENDDRAW
+ENDDEF
+#
 # redox-receiver-rescue_Conn_01x04-Connector_Generic
 #
 DEF redox-receiver-rescue_Conn_01x04-Connector_Generic J 0 40 Y N 1 F N
@@ -308,31 +327,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# redox-receiver-rescue_LD1117S33CTR-dk_PMIC-Voltage-Regulators-Linear
-#
-DEF redox-receiver-rescue_LD1117S33CTR-dk_PMIC-Voltage-Regulators-Linear U 0 20 Y Y 1 F N
-F0 "U" 50 150 60 H V C CNN
-F1 "redox-receiver-rescue_LD1117S33CTR-dk_PMIC-Voltage-Regulators-Linear" 50 250 60 H V C CNN
-F2 "digikey-footprints:SOT-223" 200 200 60 H I L CNN
-F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf" 200 300 60 H I L CNN
-F4 "497-1241-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "LD1117S33CTR" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
-F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/stmicroelectronics/LD1117S33CTR/497-1241-1-ND/586241" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC REG LINEAR 3.3V 800MA SOT223" 200 1000 60 H I L CNN "Description"
-F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -200 100 300 -200 1 1 0 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VOUT 2 400 0 100 L 50 50 1 1 w
-X VIN 3 -300 0 100 R 50 50 1 1 W
-X VOUT 4 400 -100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
