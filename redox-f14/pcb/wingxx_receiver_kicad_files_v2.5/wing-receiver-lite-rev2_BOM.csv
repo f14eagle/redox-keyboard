@@ -17,4 +17,4 @@ SW_SPST,Desc,"RESET1,",SW_SPST_CK_RS282G05A3,LibRef,2,1
 E73-nrf51822,Desc,"nrf1,",E73-nrf51822-Module,LibRef,36,1
 Through Hole Items 
 Conn_01x04_Female,Desc,"PROGR_HEADER1,",PinHeader_1x04_P2.54mm_Vertical,LibRef,4,1
-HRO-TYPE-C-31-M-12,Desc,"USB1,",HRO-TYPE-C-31-M-12-HandSoldering,LibRef,18,1
+HRO-TYPE-C-31-M-12,Desc,"USB1,",HRO-TYPE-C-f14,LibRef,18,1

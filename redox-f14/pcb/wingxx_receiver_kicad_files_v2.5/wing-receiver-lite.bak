@@ -14,6 +14,26 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
+L wingxx-receiver-v4-rescue:LD1117S33CTR-dk_PMIC-Voltage-Regulators-Linear-redox-receiver-rescue V_REG1
+U 1 1 5C0CE178
+P 8100 2750
+F 0 "V_REG1" H 8150 3037 60  0000 C CNN
+F 1 "LD1117S33CTR" H 8150 2931 60  0000 C CNN
+F 2 "redox_w_receiver_footprints:SOT-223" H 8300 2950 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf" H 8300 3050 60  0001 L CNN
+F 4 "497-1241-1-ND" H 8300 3150 60  0001 L CNN "Digi-Key_PN"
+F 5 "LD1117S33CTR" H 8300 3250 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 8300 3350 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 8300 3450 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf" H 8300 3550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/LD1117S33CTR/497-1241-1-ND/586241" H 8300 3650 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 800MA SOT223" H 8300 3750 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 8300 3850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 8300 3950 60  0001 L CNN "Status"
+	1    8100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
 L wingxx-receiver-v4-rescue:SW_SPST-Switch-redox-receiver-rescue RESET1
 U 1 1 5C0CF608
 P 1900 3350
@@ -50,15 +70,17 @@ Text GLabel 3900 1300 0    50   Input ~ 0
 SWCLK
 Text GLabel 3900 1200 0    50   Input ~ 0
 SWDIO
+Wire Wire Line
+	8500 2750 8500 2850
 $Comp
 L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0110
 U 1 1 5C0D5406
-P 8200 1850
-F 0 "#PWR0110" H 8200 1600 50  0001 C CNN
-F 1 "GND" H 8205 1677 50  0000 C CNN
-F 2 "" H 8200 1850 50  0001 C CNN
-F 3 "" H 8200 1850 50  0001 C CNN
-	1    8200 1850
+P 8100 3150
+F 0 "#PWR0110" H 8100 2900 50  0001 C CNN
+F 1 "GND" H 8105 2977 50  0000 C CNN
+F 2 "" H 8100 3150 50  0001 C CNN
+F 3 "" H 8100 3150 50  0001 C CNN
+	1    8100 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -640,16 +662,49 @@ Wire Wire Line
 $Comp
 L Device:C C11
 U 1 1 5E65FBDB
-P 7650 1700
-F 0 "C11" H 7765 1746 50  0000 L CNN
-F 1 "1uF" H 7765 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7688 1550 50  0001 C CNN
-F 3 "~" H 7650 1700 50  0001 C CNN
-	1    7650 1700
-	0    1    1    0   
+P 7350 2900
+F 0 "C11" H 7465 2946 50  0000 L CNN
+F 1 "10uF" H 7465 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7388 2750 50  0001 C CNN
+F 3 "~" H 7350 2900 50  0001 C CNN
+	1    7350 2900
+	1    0    0    -1  
 $EndComp
-Text GLabel 9150 1200 2    50   Input ~ 0
+$Comp
+L Device:C C12
+U 1 1 5E6648E4
+P 8900 2900
+F 0 "C12" H 9015 2946 50  0000 L CNN
+F 1 "10uF" H 9015 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8938 2750 50  0001 C CNN
+F 3 "~" H 8900 2900 50  0001 C CNN
+	1    8900 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9200 2600 2    50   Input ~ 0
 +3.3V
+Wire Wire Line
+	7200 2600 7350 2600
+Wire Wire Line
+	7350 2600 7350 2750
+Wire Wire Line
+	7800 2750 7350 2750
+Connection ~ 7350 2750
+Wire Wire Line
+	7350 3050 8100 3050
+Wire Wire Line
+	8100 3050 8100 3150
+Connection ~ 8100 3050
+Wire Wire Line
+	8100 3050 8900 3050
+Wire Wire Line
+	8500 2750 8900 2750
+Connection ~ 8500 2750
+Wire Wire Line
+	8900 2750 8900 2600
+Wire Wire Line
+	8900 2600 9200 2600
+Connection ~ 8900 2750
 Text GLabel 3900 1000 0    50   Input ~ 0
 +3.3V
 Text GLabel 4650 4850 2    50   Input ~ 0
@@ -659,12 +714,12 @@ RXI
 $Comp
 L wingxx-receiver-v4-rescue:VCC-power-redox-receiver-rescue #PWR0113
 U 1 1 5E6870DD
-P 7350 1300
-F 0 "#PWR0113" H 7350 1150 50  0001 C CNN
-F 1 "VCC" V 7368 1427 50  0000 L CNN
-F 2 "" H 7350 1300 50  0001 C CNN
-F 3 "" H 7350 1300 50  0001 C CNN
-	1    7350 1300
+P 7200 2600
+F 0 "#PWR0113" H 7200 2450 50  0001 C CNN
+F 1 "VCC" V 7218 2727 50  0000 L CNN
+F 2 "" H 7200 2600 50  0001 C CNN
+F 3 "" H 7200 2600 50  0001 C CNN
+	1    7200 2600
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -755,116 +810,22 @@ SWCLK
 Text GLabel 2900 1550 2    50   Input ~ 0
 SWDIO
 $Comp
-L XC6206P332MR:XC6206P332MR IC2
+L XC6206P332MR:XC6206P332MR IC?
 U 1 1 5ED95047
-P 8750 1300
-F 0 "IC2" H 9300 1565 50  0000 C CNN
-F 1 "XC6206P332MR" H 9300 1474 50  0000 C CNN
-F 2 "SOT95P280X130-3N" H 9700 1400 50  0001 L CNN
-F 3 "http://www.torexsemi.com/products/voltage_regulators/data/XC6206.pdf" H 9700 1300 50  0001 L CNN
-F 4 "Low ESR Cap.Compatible Postive Voltage Regulators" H 9700 1200 50  0001 L CNN "Description"
-F 5 "1.3" H 9700 1100 50  0001 L CNN "Height"
-F 6 "Torex" H 9700 1000 50  0001 L CNN "Manufacturer_Name"
-F 7 "XC6206P332MR" H 9700 900 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 9700 800 50  0001 L CNN "Mouser Part Number"
-F 9 "" H 9700 700 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 9700 600 50  0001 L CNN "RS Part Number"
-F 11 "" H 9700 500 50  0001 L CNN "RS Price/Stock"
-	1    8750 1300
-	-1   0    0    1   
+P 7850 1300
+F 0 "IC?" H 8400 1565 50  0000 C CNN
+F 1 "XC6206P332MR" H 8400 1474 50  0000 C CNN
+F 2 "SOT95P280X130-3N" H 8800 1400 50  0001 L CNN
+F 3 "http://www.torexsemi.com/products/voltage_regulators/data/XC6206.pdf" H 8800 1300 50  0001 L CNN
+F 4 "Low ESR Cap.Compatible Postive Voltage Regulators" H 8800 1200 50  0001 L CNN "Description"
+F 5 "1.3" H 8800 1100 50  0001 L CNN "Height"
+F 6 "Torex" H 8800 1000 50  0001 L CNN "Manufacturer_Name"
+F 7 "XC6206P332MR" H 8800 900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 8800 800 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 8800 700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 8800 600 50  0001 L CNN "RS Part Number"
+F 11 "" H 8800 500 50  0001 L CNN "RS Price/Stock"
+	1    7850 1300
+	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C12
-U 1 1 5EDAC43B
-P 8750 1700
-F 0 "C12" H 8865 1746 50  0000 L CNN
-F 1 "1uF" H 8865 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8788 1550 50  0001 C CNN
-F 3 "~" H 8750 1700 50  0001 C CNN
-	1    8750 1700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7350 1300 7400 1300
-Wire Wire Line
-	7400 1300 7400 1700
-Wire Wire Line
-	7400 1700 7500 1700
-Connection ~ 7400 1300
-Wire Wire Line
-	7400 1300 7650 1300
-Wire Wire Line
-	7800 1700 8200 1700
-Wire Wire Line
-	8200 1700 8200 1850
-Connection ~ 8200 1700
-Wire Wire Line
-	8200 1700 8600 1700
-Wire Wire Line
-	8750 1200 9050 1200
-Wire Wire Line
-	8750 1300 8850 1300
-Wire Wire Line
-	8850 1300 8850 1500
-Wire Wire Line
-	8850 1500 8200 1500
-Wire Wire Line
-	8200 1500 8200 1700
-Wire Wire Line
-	8900 1700 9050 1700
-Wire Wire Line
-	9050 1700 9050 1200
-Connection ~ 9050 1200
-Wire Wire Line
-	9050 1200 9150 1200
-NoConn ~ 1000 1050
-NoConn ~ 1000 1150
-NoConn ~ 1000 1250
-NoConn ~ 1000 1550
-NoConn ~ 1000 1650
-NoConn ~ 1000 1750
-NoConn ~ 1000 1850
-NoConn ~ 1000 1950
-NoConn ~ 1500 2600
-NoConn ~ 1600 2600
-NoConn ~ 1700 2600
-NoConn ~ 1800 2600
-NoConn ~ 1900 2600
-NoConn ~ 2000 2600
-NoConn ~ 2100 2600
-NoConn ~ 2200 2600
-NoConn ~ 2300 2600
-NoConn ~ 2400 2600
-NoConn ~ 2900 2050
-NoConn ~ 2900 1950
-NoConn ~ 2900 1850
-NoConn ~ 2900 1750
-NoConn ~ 2900 1650
-NoConn ~ 2900 1350
-NoConn ~ 2900 1250
-NoConn ~ 2900 1150
-NoConn ~ 2900 1050
-NoConn ~ 4650 3350
-NoConn ~ 4650 3450
-NoConn ~ 4650 3550
-NoConn ~ 4650 3650
-NoConn ~ 4650 3750
-NoConn ~ 4650 3850
-NoConn ~ 4650 3950
-NoConn ~ 4650 4050
-NoConn ~ 4650 4250
-NoConn ~ 4650 4350
-NoConn ~ 4650 4550
-NoConn ~ 4650 4650
-NoConn ~ 4650 4950
-NoConn ~ 4650 5050
-NoConn ~ 4650 5150
-NoConn ~ 4650 5250
-NoConn ~ 4650 5550
-NoConn ~ 4650 5750
-NoConn ~ 4650 5850
-NoConn ~ 4650 5950
-NoConn ~ 4650 6050
-NoConn ~ 4650 6150
-NoConn ~ 4650 6250
 $EndSCHEMATC

@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L wingxx-receiver-v4-rescue:SW_SPST-Switch-redox-receiver-rescue RESET1
+L redox-receiver-rescue:SW_SPST-Switch RESET1
 U 1 1 5C0CF608
 P 1900 3350
 F 0 "RESET1" V 1854 3448 50  0000 L CNN
@@ -25,44 +25,7 @@ F 3 "" H 1900 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L wingxx-receiver-v4-rescue:Conn_01x04-Connector_Generic-redox-receiver-rescue PROGR_HEADER1
-U 1 1 5C0D3AC1
-P 4100 1100
-F 0 "PROGR_HEADER1" H 4179 1092 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 4179 1001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4100 1100 50  0001 C CNN
-F 3 "~" H 4100 1100 50  0001 C CNN
-	1    4100 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0105
-U 1 1 5C0D4CCC
-P 3900 1100
-F 0 "#PWR0105" H 3900 850 50  0001 C CNN
-F 1 "GND" V 3905 972 50  0000 R CNN
-F 2 "" H 3900 1100 50  0001 C CNN
-F 3 "" H 3900 1100 50  0001 C CNN
-	1    3900 1100
-	0    1    1    0   
-$EndComp
-Text GLabel 3900 1300 0    50   Input ~ 0
-SWCLK
-Text GLabel 3900 1200 0    50   Input ~ 0
-SWDIO
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0110
-U 1 1 5C0D5406
-P 8200 1850
-F 0 "#PWR0110" H 8200 1600 50  0001 C CNN
-F 1 "GND" H 8205 1677 50  0000 C CNN
-F 2 "" H 8200 1850 50  0001 C CNN
-F 3 "" H 8200 1850 50  0001 C CNN
-	1    8200 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0111
+L redox-receiver-rescue:GND-power #PWR0111
 U 1 1 5C0D5787
 P 1500 3350
 F 0 "#PWR0111" H 1500 3100 50  0001 C CNN
@@ -72,77 +35,6 @@ F 3 "" H 1500 3350 50  0001 C CNN
 	1    1500 3350
 	0    1    1    0   
 $EndComp
-Text GLabel 5550 1050 0    50   Input ~ 0
-TXO
-Text GLabel 5550 1600 0    50   Input ~ 0
-TXODIV
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0112
-U 1 1 5C0D66B7
-P 5850 2000
-F 0 "#PWR0112" H 5850 1750 50  0001 C CNN
-F 1 "GND" H 5855 1827 50  0000 C CNN
-F 2 "" H 5850 2000 50  0001 C CNN
-F 3 "" H 5850 2000 50  0001 C CNN
-	1    5850 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:R-Device-redox-receiver-rescue R11
-U 1 1 5C0D6951
-P 5700 1350
-F 0 "R11" H 5770 1396 50  0000 L CNN
-F 1 "1.5K" H 5770 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5630 1350 50  0001 C CNN
-F 3 "~" H 5700 1350 50  0001 C CNN
-	1    5700 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:R-Device-redox-receiver-rescue R13
-U 1 1 5C0D69A3
-P 6000 1350
-F 0 "R13" H 6070 1396 50  0000 L CNN
-F 1 "1.5K" H 6070 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5930 1350 50  0001 C CNN
-F 3 "~" H 6000 1350 50  0001 C CNN
-	1    6000 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:R-Device-redox-receiver-rescue R12
-U 1 1 5C0D69D3
-P 5850 1850
-F 0 "R12" H 5920 1896 50  0000 L CNN
-F 1 "1.5K" H 5920 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 1850 50  0001 C CNN
-F 3 "~" H 5850 1850 50  0001 C CNN
-	1    5850 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 1050 5700 1050
-Wire Wire Line
-	6000 1050 6000 1200
-Wire Wire Line
-	5700 1200 5700 1050
-Connection ~ 5700 1050
-Wire Wire Line
-	5700 1050 6000 1050
-Wire Wire Line
-	5550 1600 5700 1600
-Wire Wire Line
-	5850 1600 5850 1700
-Wire Wire Line
-	5700 1500 5700 1600
-Connection ~ 5700 1600
-Wire Wire Line
-	5700 1600 5850 1600
-Wire Wire Line
-	6000 1500 6000 1600
-Wire Wire Line
-	6000 1600 5850 1600
-Connection ~ 5850 1600
 $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U1
 U 1 1 5E0D61AE
@@ -188,7 +80,7 @@ F 3 "~" H 2450 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L wingxx-receiver-v4-rescue:HRO-TYPE-C-31-M-12-Type-C USB1
+L Type-C:HRO-TYPE-C-31-M-12 USB1
 U 1 1 5E08E8E5
 P 6350 5000
 F 0 "USB1" H 6183 5797 60  0000 C CNN
@@ -243,7 +135,7 @@ D+
 Text GLabel 3450 4450 0    50   Input ~ 0
 D-
 $Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0101
+L redox-receiver-rescue:GND-power #PWR0101
 U 1 1 5E189A16
 P 3500 6750
 F 0 "#PWR0101" H 3500 6500 50  0001 C CNN
@@ -318,7 +210,7 @@ Connection ~ 2850 5100
 Wire Wire Line
 	2850 5100 2650 5100
 $Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0104
+L redox-receiver-rescue:GND-power #PWR0104
 U 1 1 5E1FDAA1
 P 2500 5850
 F 0 "#PWR0104" H 2500 5600 50  0001 C CNN
@@ -397,7 +289,7 @@ $EndComp
 Text GLabel 1050 4800 0    50   Input ~ 0
 +5V
 $Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0106
+L redox-receiver-rescue:GND-power #PWR0106
 U 1 1 5E238617
 P 1450 6750
 F 0 "#PWR0106" H 1450 6500 50  0001 C CNN
@@ -498,7 +390,7 @@ Wire Wire Line
 	6750 5450 6750 4550
 Connection ~ 6750 4550
 $Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0108
+L redox-receiver-rescue:GND-power #PWR0108
 U 1 1 5E2F2ACA
 P 7350 6050
 F 0 "#PWR0108" H 7350 5800 50  0001 C CNN
@@ -623,7 +515,7 @@ F 3 "~" H 5000 5450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0109
+L redox-receiver-rescue:GND-power #PWR0109
 U 1 1 5E60E590
 P 5350 5450
 F 0 "#PWR0109" H 5350 5200 50  0001 C CNN
@@ -637,38 +529,34 @@ Wire Wire Line
 	4650 5450 4850 5450
 Wire Wire Line
 	5150 5450 5350 5450
-$Comp
-L Device:C C11
-U 1 1 5E65FBDB
-P 7650 1700
-F 0 "C11" H 7765 1746 50  0000 L CNN
-F 1 "1uF" H 7765 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7688 1550 50  0001 C CNN
-F 3 "~" H 7650 1700 50  0001 C CNN
-	1    7650 1700
-	0    1    1    0   
-$EndComp
-Text GLabel 9150 1200 2    50   Input ~ 0
-+3.3V
-Text GLabel 3900 1000 0    50   Input ~ 0
-+3.3V
+Text GLabel 4650 3850 2    50   Input ~ 0
+RGB_DATA
 Text GLabel 4650 4850 2    50   Input ~ 0
 TXO
 Text GLabel 4650 4750 2    50   Input ~ 0
 RXI
+Text GLabel 4650 4950 2    50   Input ~ 0
+row0
+Text GLabel 4650 4250 2    50   Input ~ 0
+row1
+Text GLabel 4650 5250 2    50   Input ~ 0
+row2
+Text GLabel 4650 5550 2    50   Input ~ 0
+row3
+Text GLabel 4650 3750 2    50   Input ~ 0
+row4
+Text GLabel 4650 6150 2    50   Input ~ 0
+col0
+Text GLabel 4650 6250 2    50   Input ~ 0
+col1
+Text GLabel 4650 3450 2    50   Input ~ 0
+col2
+Text GLabel 4650 3650 2    50   Input ~ 0
+col3
+Text GLabel 4650 3550 2    50   Input ~ 0
+col4
 $Comp
-L wingxx-receiver-v4-rescue:VCC-power-redox-receiver-rescue #PWR0113
-U 1 1 5E6870DD
-P 7350 1300
-F 0 "#PWR0113" H 7350 1150 50  0001 C CNN
-F 1 "VCC" V 7368 1427 50  0000 L CNN
-F 2 "" H 7350 1300 50  0001 C CNN
-F 3 "" H 7350 1300 50  0001 C CNN
-	1    7350 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:VCC-power-redox-receiver-rescue #PWR0107
+L redox-receiver-rescue:VCC-power #PWR0107
 U 1 1 5E2BDCF5
 P 6750 3800
 F 0 "#PWR0107" H 6750 3650 50  0001 C CNN
@@ -679,7 +567,7 @@ F 3 "" H 6750 3800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L wingxx-receiver-v4-rescue:VCC-power-redox-receiver-rescue #PWR0114
+L redox-receiver-rescue:VCC-power #PWR0114
 U 1 1 5E1B2AF4
 P 8450 5000
 F 0 "#PWR0114" H 8450 4850 50  0001 C CNN
@@ -689,182 +577,12 @@ F 3 "" H 8450 5000 50  0001 C CNN
 	1    8450 5000
 	0    1    1    0   
 $EndComp
-$Comp
-L wingxx-receiver-v4-rescue:E73-nrf51822-redox-receiver-rescue nrf1
-U 1 1 5E244543
-P 1950 1550
-F 0 "nrf1" H 1950 2437 60  0000 C CNN
-F 1 "E73-nrf51822" H 1950 2331 60  0000 C CNN
-F 2 "wingxx-receiver:E73-nrf51822-Module" H 1950 1650 60  0001 C CNN
-F 3 "" H 1950 1650 60  0001 C CNN
-	1    1950 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0102
-U 1 1 5E249D93
-P 1000 2150
-F 0 "#PWR0102" H 1000 1900 50  0001 C CNN
-F 1 "GND" V 1005 2022 50  0000 R CNN
-F 2 "" H 1000 2150 50  0001 C CNN
-F 3 "" H 1000 2150 50  0001 C CNN
-	1    1000 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0103
-U 1 1 5E254B3A
-P 1400 2600
-F 0 "#PWR0103" H 1400 2350 50  0001 C CNN
-F 1 "GND" V 1405 2472 50  0000 R CNN
-F 2 "" H 1400 2600 50  0001 C CNN
-F 3 "" H 1400 2600 50  0001 C CNN
-	1    1400 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0115
-U 1 1 5E25F806
-P 2500 2600
-F 0 "#PWR0115" H 2500 2350 50  0001 C CNN
-F 1 "GND" V 2505 2472 50  0000 R CNN
-F 2 "" H 2500 2600 50  0001 C CNN
-F 3 "" H 2500 2600 50  0001 C CNN
-	1    2500 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0117
-U 1 1 5E26A687
-P 2900 2150
-F 0 "#PWR0117" H 2900 1900 50  0001 C CNN
-F 1 "GND" V 2905 2022 50  0000 R CNN
-F 2 "" H 2900 2150 50  0001 C CNN
-F 3 "" H 2900 2150 50  0001 C CNN
-	1    2900 2150
-	0    -1   -1   0   
-$EndComp
-Text GLabel 1000 2050 0    50   Input ~ 0
-+3.3V
-Text GLabel 1000 1350 0    50   Input ~ 0
-RXI
-Text GLabel 1000 1450 0    50   Input ~ 0
-TXODIV
-Text GLabel 2900 1450 2    50   Input ~ 0
-SWCLK
-Text GLabel 2900 1550 2    50   Input ~ 0
-SWDIO
-$Comp
-L XC6206P332MR:XC6206P332MR IC2
-U 1 1 5ED95047
-P 8750 1300
-F 0 "IC2" H 9300 1565 50  0000 C CNN
-F 1 "XC6206P332MR" H 9300 1474 50  0000 C CNN
-F 2 "SOT95P280X130-3N" H 9700 1400 50  0001 L CNN
-F 3 "http://www.torexsemi.com/products/voltage_regulators/data/XC6206.pdf" H 9700 1300 50  0001 L CNN
-F 4 "Low ESR Cap.Compatible Postive Voltage Regulators" H 9700 1200 50  0001 L CNN "Description"
-F 5 "1.3" H 9700 1100 50  0001 L CNN "Height"
-F 6 "Torex" H 9700 1000 50  0001 L CNN "Manufacturer_Name"
-F 7 "XC6206P332MR" H 9700 900 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 9700 800 50  0001 L CNN "Mouser Part Number"
-F 9 "" H 9700 700 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 9700 600 50  0001 L CNN "RS Part Number"
-F 11 "" H 9700 500 50  0001 L CNN "RS Price/Stock"
-	1    8750 1300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5EDAC43B
-P 8750 1700
-F 0 "C12" H 8865 1746 50  0000 L CNN
-F 1 "1uF" H 8865 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8788 1550 50  0001 C CNN
-F 3 "~" H 8750 1700 50  0001 C CNN
-	1    8750 1700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7350 1300 7400 1300
-Wire Wire Line
-	7400 1300 7400 1700
-Wire Wire Line
-	7400 1700 7500 1700
-Connection ~ 7400 1300
-Wire Wire Line
-	7400 1300 7650 1300
-Wire Wire Line
-	7800 1700 8200 1700
-Wire Wire Line
-	8200 1700 8200 1850
-Connection ~ 8200 1700
-Wire Wire Line
-	8200 1700 8600 1700
-Wire Wire Line
-	8750 1200 9050 1200
-Wire Wire Line
-	8750 1300 8850 1300
-Wire Wire Line
-	8850 1300 8850 1500
-Wire Wire Line
-	8850 1500 8200 1500
-Wire Wire Line
-	8200 1500 8200 1700
-Wire Wire Line
-	8900 1700 9050 1700
-Wire Wire Line
-	9050 1700 9050 1200
-Connection ~ 9050 1200
-Wire Wire Line
-	9050 1200 9150 1200
-NoConn ~ 1000 1050
-NoConn ~ 1000 1150
-NoConn ~ 1000 1250
-NoConn ~ 1000 1550
-NoConn ~ 1000 1650
-NoConn ~ 1000 1750
-NoConn ~ 1000 1850
-NoConn ~ 1000 1950
-NoConn ~ 1500 2600
-NoConn ~ 1600 2600
-NoConn ~ 1700 2600
-NoConn ~ 1800 2600
-NoConn ~ 1900 2600
-NoConn ~ 2000 2600
-NoConn ~ 2100 2600
-NoConn ~ 2200 2600
-NoConn ~ 2300 2600
-NoConn ~ 2400 2600
-NoConn ~ 2900 2050
-NoConn ~ 2900 1950
-NoConn ~ 2900 1850
-NoConn ~ 2900 1750
-NoConn ~ 2900 1650
-NoConn ~ 2900 1350
-NoConn ~ 2900 1250
-NoConn ~ 2900 1150
-NoConn ~ 2900 1050
-NoConn ~ 4650 3350
-NoConn ~ 4650 3450
-NoConn ~ 4650 3550
-NoConn ~ 4650 3650
-NoConn ~ 4650 3750
-NoConn ~ 4650 3850
-NoConn ~ 4650 3950
-NoConn ~ 4650 4050
-NoConn ~ 4650 4250
-NoConn ~ 4650 4350
-NoConn ~ 4650 4550
-NoConn ~ 4650 4650
-NoConn ~ 4650 4950
-NoConn ~ 4650 5050
-NoConn ~ 4650 5150
-NoConn ~ 4650 5250
-NoConn ~ 4650 5550
-NoConn ~ 4650 5750
-NoConn ~ 4650 5850
-NoConn ~ 4650 5950
-NoConn ~ 4650 6050
-NoConn ~ 4650 6150
-NoConn ~ 4650 6250
+Text GLabel 4650 5750 2    50   Input ~ 0
+POF0
+Text GLabel 4650 5850 2    50   Input ~ 0
+POF1
+Text GLabel 4650 5950 2    50   Input ~ 0
+POF4
+Text GLabel 4650 6050 2    50   Input ~ 0
+POF5
 $EndSCHEMATC

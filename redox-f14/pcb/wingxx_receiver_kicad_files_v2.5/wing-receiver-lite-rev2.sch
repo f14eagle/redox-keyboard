@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:wing-receiver-lite-rev2-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -38,15 +39,15 @@ $EndComp
 $Comp
 L wingxx-receiver-v4-rescue:GND-power-redox-receiver-rescue #PWR0105
 U 1 1 5C0D4CCC
-P 3900 1100
-F 0 "#PWR0105" H 3900 850 50  0001 C CNN
-F 1 "GND" V 3905 972 50  0000 R CNN
-F 2 "" H 3900 1100 50  0001 C CNN
-F 3 "" H 3900 1100 50  0001 C CNN
-	1    3900 1100
+P 3900 1300
+F 0 "#PWR0105" H 3900 1050 50  0001 C CNN
+F 1 "GND" V 3905 1172 50  0000 R CNN
+F 2 "" H 3900 1300 50  0001 C CNN
+F 3 "" H 3900 1300 50  0001 C CNN
+	1    3900 1300
 	0    1    1    0   
 $EndComp
-Text GLabel 3900 1300 0    50   Input ~ 0
+Text GLabel 3900 1100 0    50   Input ~ 0
 SWCLK
 Text GLabel 3900 1200 0    50   Input ~ 0
 SWDIO
@@ -193,7 +194,7 @@ U 1 1 5E08E8E5
 P 6350 5000
 F 0 "USB1" H 6183 5797 60  0000 C CNN
 F 1 "HRO-TYPE-C-31-M-12" H 6183 5691 60  0000 C CNN
-F 2 "Type-C:HRO-TYPE-C-31-M-12-HandSoldering" H 6350 5000 60  0001 C CNN
+F 2 "pcb:HRO-TYPE-C-f14" H 6350 5000 60  0001 C CNN
 F 3 "" H 6350 5000 60  0001 C CNN
 	1    6350 5000
 	1    0    0    -1  
@@ -760,7 +761,7 @@ U 1 1 5ED95047
 P 8750 1300
 F 0 "IC2" H 9300 1565 50  0000 C CNN
 F 1 "XC6206P332MR" H 9300 1474 50  0000 C CNN
-F 2 "SOT95P280X130-3N" H 9700 1400 50  0001 L CNN
+F 2 "XC6206P332MR:SOT95P280X130-3N" H 9700 1400 50  0001 L CNN
 F 3 "http://www.torexsemi.com/products/voltage_regulators/data/XC6206.pdf" H 9700 1300 50  0001 L CNN
 F 4 "Low ESR Cap.Compatible Postive Voltage Regulators" H 9700 1200 50  0001 L CNN "Description"
 F 5 "1.3" H 9700 1100 50  0001 L CNN "Height"

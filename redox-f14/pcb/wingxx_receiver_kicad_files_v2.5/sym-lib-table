@@ -6,4 +6,6 @@
   (lib (name Promicro)(type Legacy)(uri "C:/gitrepo/redox-keyboard-f14/redox-f14/kicad/library/Mixed Lib/schema/Promicro.lib")(options "")(descr ""))
   (lib (name redox_rev1-rescue)(type Legacy)(uri C:/gitrepo/redox-keyboard-f14/redox-f14/pcb/redox_w_transmitters_kicad_files/redox_rev1-rescue.lib)(options "")(descr ""))
   (lib (name wingxx-receiver-v4-rescue)(type Legacy)(uri ${KIPRJMOD}/wingxx-receiver-v4-rescue.lib)(options "")(descr ""))
+  (lib (name XC6206P332MR)(type Legacy)(uri ${F14_REPO}/f14-kicad/library/XC6206P332MR/KiCad/XC6206P332MR.lib)(options "")(descr ""))
+  (lib (name wing-receiver-lite-rescue)(type Legacy)(uri ${KIPRJMOD}/wing-receiver-lite-rescue.lib)(options "")(descr ""))
 )
